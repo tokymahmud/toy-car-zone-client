@@ -1,14 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-// const auth =getAuth(app);
+import { AuthContext } from '../../Providers/authProviders';
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
+const auth =getAuth(app);
 
 
 const Register = () => {
     
   const [error, setError] =useState('');
 
-//   const { createUser} = useContext(AuthContext);
-//   console.log(createUser);
+  const { createUser} = useContext(AuthContext);
+  console.log(createUser);
 
   const aa= (email,password)=>{
       createUserWithEmailAndPassword(auth,email,password)
