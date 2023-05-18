@@ -1,15 +1,17 @@
 import React from 'react';
 import Banner from './Banner/Banner';
 import Gallery from './Gallery/Gallery';
+import Reacttabs from './React Tabs/Reacttabs';
 
 const Home = () => {
     return (
         <div className='p-5'>
-            <div>
+            
             <Banner></Banner>
 
-            </div>
+            
             <Gallery></Gallery>
+            <Reacttabs></Reacttabs>
 
         </div>
     );

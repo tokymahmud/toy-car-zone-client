@@ -4,6 +4,7 @@ const Gallery = () => {
     return (
         <div>
              <h1 className='text-2xl text-center	'>Picture Gallery</h1>
+             <p>You can find various toy car pictures here. There are different varities of toys to chose from. so explore it now!</p>
 
 <div className='flex space-x-4'>
     <div>
