@@ -5,7 +5,10 @@ import Gallery from './Gallery/Gallery';
 const Home = () => {
     return (
         <div className='p-5'>
+            <div>
             <Banner></Banner>
+
+            </div>
             <Gallery></Gallery>
 
         </div>
