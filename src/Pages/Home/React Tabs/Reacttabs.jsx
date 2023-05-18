@@ -8,7 +8,7 @@ const Reacttabs = () => {
   useEffect(()=>{
     fetch("../../../../public/toy.json")
     .then((response)=>response.json())
-    .then((data)=>settoyInfo(data.categories[0]));
+    .then((data)=>settoyInfo(data));
     
     
 
@@ -17,87 +17,38 @@ const Reacttabs = () => {
 
 
 
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabSelect = (index) => {
-    setActiveTab(index);
-  };
+  // const handleTabSelect = (index) => {
+  //   setActiveTab(index);
+  // };
 
   return (
     <div>
         <h1 className='text-2xl text-center	decoration-emerald-500	font-bold'>Shop By <span className='underline '>Catagory</span></h1>
-         <div className="shop-by-category">
-      <Tabs selectedIndex={activeTab} onSelect={handleTabSelect}>
-        <TabList>
-          <Tab>Construction Car</Tab>
-          <Tab>Regular car</Tab>
-          <Tab>Toy Truck</Tab>
-        </TabList>
+        <div className='flex items-center	'>
+        {toyInfo?.categories?.map(category => (
+        <Tabs key={category._id}>
+          <TabList>
+            <Tab>{category.name}</Tab>
+          </TabList>
+          <TabPanel>
+            {category.items.map(item => (
+              <div className="card" key={item.toycode}>
+                <img src={item.picture} alt={item.toyName} />
+                <h2>{item.toyName}</h2>
+                <p>Price: ${item.price}</p>
+                <p>Rating: {item.rating}</p>
+                <button  type="button" className="btn btn-primary"><Link >View Details</Link> </button>
 
-        <TabPanel>
-        <div className='grid grid-cols-3 gap-4 mt-6'>
+              </div>
+            ))}
+          </TabPanel>
+        </Tabs>
+      ))}
 
-        {toyInfo.items?.map((SingleToy) => (
-                
-
-                <div key={SingleToy?.toycode} >
-              <div className="card w-96 bg-base-100 shadow-xl image-full">
-    <figure>
-      <img src={SingleToy?.picture} alt="Shoes" />
-  
-      </figure>
-    <div className="card-body">
-      <h2 className="card-title">{SingleToy?.toyName}</h2>
-      <p>price:{SingleToy?.price}</p>
-      <p>rating:{SingleToy?.rating}</p>
-  
-      <div className="card-actions justify-end">
-      
-  
-        <button  type="button" className="btn btn-primary"><Link >View Details</Link> </button>
-      </div>
-    </div>
-  </div>
-   </div>
-    ))}
-    </div>
-        </TabPanel>
-        <TabPanel>
-          <ul className="sub-category-list">
-            <li><div className="card w-96 bg-base-100 shadow-xl">
-  <figure className="px-10 pt-10">
-    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
-  </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">View Details </button>
-    </div>
-  </div>
-</div></li>
-           
-          </ul>
-        </TabPanel>
-        <TabPanel>
-          <ul className="sub-category-list">
-            <li><div className="card w-96 bg-base-100 shadow-xl">
-  <figure className="px-10 pt-10">
-    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
-  </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">View Details </button>
-    </div>
-  </div>
-</div></li>
-           
-          </ul>
-        </TabPanel>
-      </Tabs>
-    </div>
+        </div>
+        
 
     </div>
    
