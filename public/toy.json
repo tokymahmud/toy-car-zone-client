@@ -1,0 +1,129 @@
+{
+    "categories": [
+      {
+        "_id":1,
+        "name": "Construction Car",
+        "items": [
+          {
+            "toycode":100,
+
+            "picture": "https://example.com/construction-car.jpg",
+            "toyName": "Mighty Bulldozer",
+            "sellerName": "Construction Toys Inc.",
+            "sellerEmail": "constructiontoys@example.com",
+            "price": 39.99,
+            "rating": 4.8,
+            "availableQuantity": 5,
+            "description": "The Mighty Bulldozer is a heavy-duty construction car designed for moving large quantities of dirt and debris. It features a powerful engine and a durable construction that can withstand rough play. With its realistic design and movable parts, kids can engage in imaginative construction play. Get ready for some exciting construction adventures with the Mighty Bulldozer!",
+            "features": [
+              { "name": "Realistic engine sound", "description": "Experience the authentic rumble of a powerful bulldozer engine." },
+              { "name": "Moving bucket", "description": "The bucket can be raised and lowered to simulate real construction operations." },
+              { "name": "Sturdy design", "description": "Built with high-quality materials to withstand demanding construction tasks." }
+            ]
+          },
+          {
+            "toycode":101,
+
+            "picture": "https://example.com/crane-truck.jpg",
+            "toyName": "Crane Truck",
+            "sellerName": "Toys Unlimited",
+            "sellerEmail": "toysunlimited@example.com",
+            "price": 49.99,
+            "rating": 4.6,
+            "availableQuantity": 8,
+            "description": "The Crane Truck is an essential vehicle for any construction site. With its extendable crane arm and rotating cabin, it can handle heavy lifting and precise positioning of materials. The Crane Truck is built to withstand tough conditions and provide hours of engaging play. Let your little ones experience the thrill of operating a crane with this realistic toy!",
+            "features": [
+              { "name": "Extendable crane arm", "description": "The crane arm can be extended to reach high points and lift heavy objects." },
+              { "name": "Rotating cabin", "description": "The cabin can rotate 360 degrees, allowing for precise maneuvering." },
+              { "name": "Stabilizer legs", "description": "The stabilizer legs provide stability and support during crane operations." }
+            ]
+          }
+        ]
+      },
+      {
+        "_id":2,
+
+        "name": "Regular Car",
+        "items": [
+          {
+            "toycode":200,
+
+            "picture": "https://example.com/toy-car.jpg",
+            "toyName": "Super Speed Racer",
+            "sellerName": "Toy World",
+            "sellerEmail": "toyworld@example.com",
+            "price": 29.99,
+            "rating": 4.5,
+            "availableQuantity": 10,
+            "description": "The Super Speed Racer is a sleek and powerful toy car that will thrill any young racing enthusiast. With its aerodynamic design and high-speed capabilities, it's perfect for exciting races and imaginative play. Made with durable materials, this toy car is built to last and withstand rough play. Get ready for hours of racing fun with the Super Speed Racer!",
+            "features": [
+              { "name": "Realistic engine sounds", "description": "Experience the thrilling roar of a powerful engine with realistic sound effects." },
+              { "name": "LED headlights", "description": "Illuminate your racing adventures with bright LED headlights for enhanced visibility." },
+              { "name": "Remote control operated", "description": "Take control of the Super Speed Racer using the included remote control for precision maneuvering." },
+              { "name": "Rechargeable battery", "description": "Easily recharge the toy car's battery for continued playtime enjoyment." },
+              { "name": "Scale", "description": "1:32 scale model replica of a real racing car for added authenticity." }
+            ]
+          },
+          {
+            "toycode":201,
+
+            "picture": "https://example.com/toy-car2.jpg",
+            "toyName": "Rally Turbo",
+            "sellerName": "Speedy Toys",
+            "sellerEmail": "speedytoys@example.com",
+            "price": 34.99,
+            "rating": 4.3,
+            "availableQuantity": 12,
+            "description": "The Rally Turbo is a versatile and agile toy car perfect for both on-road and off-road adventures. Its rugged design and high-performance features make it a favorite among car enthusiasts. With its sleek body and powerful engine, the Rally Turbo delivers speed and excitement. Get ready to race and conquer any terrain with this thrilling toy car!",
+            "features": [
+              { "name": "Durable off-road tires", "description": "Equipped with specially designed tires for superior traction on various surfaces." },
+              { "name": "Shock-absorbing suspension", "description": "The suspension system helps absorb shocks and provides a smooth ride even on rough terrains." },
+              { "name": "Detachable body parts", "description": "Certain parts of the car's body can be removed for customization and maintenance." }
+            ]
+          }
+        ]
+      },
+      {
+        "_id":3,
+
+        "name": "Toy Truck",
+        "items": [
+          {
+            "toycode":300,
+
+            "picture": "https://example.com/toy-truck.jpg",
+            "toyName": "Monster Truck Madness",
+            "sellerName": "Big Wheels Toys",
+            "sellerEmail": "bigwheels@example.com",
+            "price": 34.99,
+            "rating": 4.7,
+            "availableQuantity": 6,
+            "description": "The Monster Truck Madness is a rugged and fearless toy truck that dominates any terrain. With its oversized wheels and powerful suspension, it can conquer obstacles and perform jaw-dropping stunts. This monster truck is built to withstand rough play and provide endless entertainment. Let your child's imagination run wild with the Monster Truck Madness!",
+            "features": [
+              { "name": "Oversized wheels", "description": "The monster truck's large wheels provide excellent off-road performance and can overcome various obstacles." },
+              { "name": "Durable construction", "description": "Made with tough materials to withstand intense jumps, crashes, and stunts." },
+              { "name": "High-flying action", "description": "Experience the excitement of monster truck shows with high-flying jumps and gravity-defying tricks." }
+            ]
+          },
+          {
+            "toycode":301,
+
+            "picture": "https://example.com/toy-truck2.jpg",
+            "toyName": "Rescue Heroes",
+            "sellerName": "Rescue Toys",
+            "sellerEmail": "rescuetoys@example.com",
+            "price": 27.99,
+            "rating": 4.2,
+            "availableQuantity": 9,
+            "description": "The Rescue Heroes toy truck is an essential vehicle for any rescue mission. With its realistic design and emergency features, it's perfect for imaginative play scenarios. Equipped with a siren sound and flashing lights, this toy truck will create an exciting rescue atmosphere. Let your child become a hero and save the day with the Rescue Heroes toy truck!",
+            "features": [
+              { "name": "Siren sound and lights", "description": "Activate the siren sound and see the flashing lights for a realistic rescue experience." },
+              { "name": "Extendable ladder", "description": "The truck features an extendable ladder to reach high places and rescue people in need." },
+              { "name": "Emergency accessories", "description": "Comes with additional accessories like cones, barricades, and a first aid kit for realistic rescue missions." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
