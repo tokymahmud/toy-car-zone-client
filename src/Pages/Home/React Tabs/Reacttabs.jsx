@@ -34,12 +34,16 @@ const Reacttabs = () => {
           </TabList>
           <TabPanel>
             {category.items.map(item => (
-              <div className="card" key={item.toycode}>
-                <img src={item.picture} alt={item.toyName} />
-                <h2>{item.toyName}</h2>
+              <div className="card w-96 bg-base-100 shadow-xl" key={item.toycode}>
+                <figure>                <img className="mask mask-squircle" src={item.picture} alt={item.toyName} />
+</figure>
+<div className="card-body">
+
+                <h2 className="card-title">{item.toyName}</h2>
                 <p>Price: ${item.price}</p>
                 <p>Rating: {item.rating}</p>
                 <button  type="button" className="btn btn-primary"><Link >View Details</Link> </button>
+                </div>
 
               </div>
             ))}
