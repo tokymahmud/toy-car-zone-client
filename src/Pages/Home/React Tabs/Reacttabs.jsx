@@ -17,11 +17,6 @@ const Reacttabs = () => {
 
 
 
-  // const [activeTab, setActiveTab] = useState(0);
-
-  // const handleTabSelect = (index) => {
-  //   setActiveTab(index);
-  // };
 
   return (
     <div>
@@ -42,7 +37,7 @@ const Reacttabs = () => {
                 <h2 className="card-title">{item.toyName}</h2>
                 <p>Price: ${item.price}</p>
                 <p>Rating: {item.rating}</p>
-                <button  type="button" className="btn btn-primary"><Link >View Details</Link> </button>
+                <button  type="button" className="btn btn-primary" ><Link >View Details</Link> </button>
                 </div>
 
               </div>
