@@ -20,7 +20,7 @@ const Navbar = () => {
     {
     user? <>
     <span>{user.img}
-    <img className="w-10 rounded-full" src='https://img.freepik.com/free-photo/newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall_176420-25024.jpg?w=996&t=st=1684597828~exp=1684598428~hmac=a0cfd602ee27924925af990f2511619a97ff41b6114314f72a622efc2ccf2516'></img>
+    <img className="w-10 rounded-full hover:opacity-75" src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60'></img>
     </span> 
     <button onClick={handleLogOut} className="btn btn-outline">Log Out</button>
     <li><Link to='/mytoys'>My Toys</Link></li>
