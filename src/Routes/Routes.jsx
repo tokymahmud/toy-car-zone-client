@@ -7,6 +7,9 @@ import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/error-page";
 import ToyDetails from "../Pages/SingleToyDetails/ToyDetails";
 import PrivateRoute from "./PrivateRoute";
+import AllToys from "../Pages/All Toys/AllToys";
+import MyToys from "../Pages/My Toys/MyToys";
+import Addatoy from "../Pages/Add A Toy/Addatoy";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
         {
           path: '/register',
           element: <Register></Register>,
+        },
+        {
+          path: '/alltoys',
+          element: <AllToys></AllToys>,
+        },
+        {
+          path: '/mytoys',
+          element: <MyToys></MyToys>,
+        },
+        {
+          path: '/addatoy',
+          element: <Addatoy></Addatoy>,
         },
         {
           path: '/services/:id',
