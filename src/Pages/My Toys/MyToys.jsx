@@ -13,7 +13,7 @@ const MyToys = () => {
     .then(res=>res.json())
     .then(data=>setty(data))
 
-   },[]);
+   },[url]);
    const handleDelete = id =>{
     const proceed =confirm('Do you want to delete this toy?');
     if(proceed){
@@ -32,6 +32,30 @@ const MyToys = () => {
         })
 
     }
+}
+
+const handleUpdate =id =>{
+    fetch(`http://localhost:5000/added/${id}`, {
+        method:'PATCH',
+        headers:{
+            'content-type':'application/json'
+        },
+        body: JSON.stringify({status:'confirm'})
+    })
+    .then(res=>res.json())
+    .then(data=>{
+        console.log(data);
+        if(data.modifiedCount>0){
+           const remaining = ty.filter(st=>st._id!==id);
+           const updated =ty.find(st=>st._id==id);
+           updated.status ='CONFIRM'
+           const newupdate =[updated,...remaining];
+           setty(newupdate);
+
+        }
+    }
+    )
+
 }
 
     return (
@@ -58,6 +82,7 @@ const MyToys = () => {
         ty.map(st=><MyToysTable key={st._id}
         st={st}
         handleDelete={handleDelete}
+        handleUpdate={handleUpdate}
         ></MyToysTable>
         )
       

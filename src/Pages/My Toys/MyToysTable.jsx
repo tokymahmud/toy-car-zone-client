@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyToysTable = ({st, handleDelete}) => {
+const MyToysTable = ({st, handleDelete,handleUpdate,status}) => {
     const {_id,pictureUrl,name,sellerName,sellerEmail,subCategory,price,rating,quantity,description} =st;
 
    
@@ -32,7 +32,11 @@ const MyToysTable = ({st, handleDelete}) => {
         <td>{rating}</td>
         <td>{quantity}</td>
         <th>
-        <button  className="btn btn-active btn-accent">UPDATE</button>
+       {
+            status === 'CONFIRM' ? <span className='font-bold text-primary'>Confirmed</span>:
+
+       <button onClick={()=>handleUpdate(_id)}  className="btn btn-active btn-accent">UPDATE</button>
+    }
 
           <br></br>
           <button onClick={()=>handleDelete(_id)} className="btn btn-active btn-secondary">DELETE</button>
