@@ -13,11 +13,29 @@ const MyToys = () => {
     .then(res=>res.json())
     .then(data=>setty(data))
 
-   },[])
+   },[]);
+   const handleDelete = id =>{
+    const proceed =confirm('Do you want to delete this toy?');
+    if(proceed){
+        fetch(`http://localhost:5000/added/${id}`, {
+            method:'DELETE'
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data);
+            if(data.deletedCount>0){
+                
+                alert('deleted successfull');
+                const remaining = ty.filter(st=>st._id!==id);
+                setty(remaining);
+            }
+        })
+
+    }
+}
 
     return (
         <div>
-            <h1>poruman:{ty.length}</h1>
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
     {/* head */}
@@ -39,6 +57,7 @@ const MyToys = () => {
       {
         ty.map(st=><MyToysTable key={st._id}
         st={st}
+        handleDelete={handleDelete}
         ></MyToysTable>
         )
       

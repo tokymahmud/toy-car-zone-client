@@ -1,7 +1,9 @@
 import React from 'react';
 
-const MyToysTable = ({st}) => {
-    const {pictureUrl,name,sellerName,sellerEmail,subCategory,price,rating,quantity,description} = st;
+const MyToysTable = ({st, handleDelete}) => {
+    const {_id,pictureUrl,name,sellerName,sellerEmail,subCategory,price,rating,quantity,description} =st;
+
+   
     return (
         <div>
                 <tr>
@@ -30,10 +32,10 @@ const MyToysTable = ({st}) => {
         <td>{rating}</td>
         <td>{quantity}</td>
         <th>
-        <button className="btn btn-active btn-accent">UPDATE</button>
+        <button  className="btn btn-active btn-accent">UPDATE</button>
 
           <br></br>
-          <button className="btn btn-active btn-secondary">DELETE</button>
+          <button onClick={()=>handleDelete(_id)} className="btn btn-active btn-secondary">DELETE</button>
 
         </th>
       </tr>
