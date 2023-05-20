@@ -6,7 +6,7 @@ const Footer = () => {
 <footer className="footer footer-center p-10 bg-primary text-primary-content">
   <div>
 <img className="w-10 rounded-full" src='https://img.freepik.com/free-vector/font-design-word-toy-shop-with-many-toys_1308-42318.jpg?w=900&t=st=1684346003~exp=1684346603~hmac=1963f48a02d3d29341b975c2095688c975609eb02ba3396c6a5bfe62d11a1549'></img>    <p className="font-bold">
-      ACME Industries Ltd. <br/>Providing reliable tech since 1992
+      Toy Car Zone .inc <br/>Providing reliable toys since 1992
     </p> 
     <p>Copyright © 2023 - All right reserved</p>
   </div> 
