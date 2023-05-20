@@ -19,7 +19,9 @@ const Navbar = () => {
     <li><Link to='/blogs'>Blogs</Link></li>
     {
     user? <>
-    <span>{user.img}</span> 
+    <span>{user.img}
+    <img className="w-10 rounded-full" src='https://img.freepik.com/free-photo/newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall_176420-25024.jpg?w=996&t=st=1684597828~exp=1684598428~hmac=a0cfd602ee27924925af990f2511619a97ff41b6114314f72a622efc2ccf2516'></img>
+    </span> 
     <button onClick={handleLogOut} className="btn btn-outline">Log Out</button>
     <li><Link to='/mytoys'>My Toys</Link></li>
     <li><Link to='/addatoy'>Add A Toy</Link></li>
