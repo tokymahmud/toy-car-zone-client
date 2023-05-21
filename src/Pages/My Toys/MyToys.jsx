@@ -63,6 +63,9 @@ const handleUpdate =id =>{
 
     return (
         <div>
+                              <button className="btn btn-sm">Sort</button>
+
+
             <div className="overflow-x-auto w-full">
   <table className="table w-full">
     {/* head */}
@@ -92,6 +95,7 @@ const handleUpdate =id =>{
         )
       
       }
+
      
     </tbody>
  
