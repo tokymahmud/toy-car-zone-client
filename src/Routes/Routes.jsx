@@ -51,12 +51,12 @@ const router = createBrowserRouter([
         {
           path: '/services/:id',
           element:<PrivateRoute><ToyDetails></ToyDetails></PrivateRoute> ,
-          loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+          loader:({params})=>fetch(`https://toy-car-zone-server-eosin.vercel.app/services/${params.id}`)
         },
         {
           path: '/added/:id',
           element:<PrivateRoute><AllToysViewdetails></AllToysViewdetails></PrivateRoute> ,
-          loader:({params})=>fetch(`http://localhost:5000/added/${params.id}`)
+          loader:({params})=>fetch(`https://toy-car-zone-server-eosin.vercel.app/added/${params.id}`)
         },
       ]
     },

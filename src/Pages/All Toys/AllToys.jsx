@@ -7,7 +7,7 @@ const AllToys = () => {
     const {user} =useContext(AuthContext);
     const [toys, settoys] = useState([]);
 
-    const url = `http://localhost:5000/added?limit=20`;
+    const url = `https://toy-car-zone-server-eosin.vercel.app/added?limit=20`;
    useEffect(()=>{
     fetch(url)
     .then(res=>res.json())

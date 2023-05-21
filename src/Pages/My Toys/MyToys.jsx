@@ -8,7 +8,7 @@ const MyToys = () => {
    const {user} =useContext(AuthContext);
    const [ty, setty] = useState([]);
 
-   const url = `http://localhost:5000/added?sellerEmail=${user?.email}`;
+   const url = `https://toy-car-zone-server-eosin.vercel.app/added?sellerEmail=${user?.email}`;
    useEffect(()=>{
     fetch(url)
     .then(res=>res.json())
@@ -18,7 +18,7 @@ const MyToys = () => {
    const handleDelete = id =>{
     const proceed =confirm('Do you want to delete this toy?');
     if(proceed){
-        fetch(`http://localhost:5000/added/${id}`, {
+        fetch(`https://toy-car-zone-server-eosin.vercel.app/added/${id}`, {
             method:'DELETE'
         })
         .then(res=>res.json())
@@ -36,7 +36,7 @@ const MyToys = () => {
 }
 
 const handleUpdate =id =>{
-    fetch(`http://localhost:5000/added/${id}`, {
+    fetch(`https://toy-car-zone-server-eosin.vercel.app/added/${id}`, {
         method:'PATCH',
         headers:{
             'content-type':'application/json'
