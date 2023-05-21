@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/authProviders';
 import MyToysTable from './MyToysTable';
+import UpdateModal from './UpdateModal';
 
 const MyToys = () => {
    const {user} =useContext(AuthContext);
@@ -58,6 +59,8 @@ const handleUpdate =id =>{
 
 }
 
+  
+
     return (
         <div>
             <div className="overflow-x-auto w-full">
@@ -83,6 +86,8 @@ const handleUpdate =id =>{
         st={st}
         handleDelete={handleDelete}
         handleUpdate={handleUpdate}
+         
+
         ></MyToysTable>
         )
       

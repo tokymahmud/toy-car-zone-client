@@ -1,7 +1,10 @@
 import React from 'react';
+import UpdateModal from './UpdateModal';
 
 const MyToysTable = ({st, handleDelete,handleUpdate,status}) => {
     const {_id,pictureUrl,name,sellerName,sellerEmail,subCategory,price,rating,quantity,description} =st;
+
+    
 
    
     return (
@@ -40,6 +43,10 @@ const MyToysTable = ({st, handleDelete,handleUpdate,status}) => {
 
           <br></br>
           <button onClick={()=>handleDelete(_id)} className="btn btn-active btn-secondary">DELETE</button>
+         
+
+
+
 
         </th>
       </tr>
